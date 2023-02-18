@@ -7,11 +7,7 @@ body {
   background-color: rgba(12, 1, 1, 0.774);
   color: #ffffff;
 }
-.image {
-  width: 50px;
-  height: 40px;
-  border-radius: 50%;
-}
+/* header-section starts */
 .Header-div {
   border: 1px solid red;
   display: flex;
@@ -26,4 +22,45 @@ body {
 .Header-div > p {
   color: rgb(120, 120, 216);
   margin: 1rem 0px;
+}
+/* Header-section ends */
+/* Object-session begins */
+.Main-div {
+  /* border: 1px solid blue; */
+  display: block;
+}
+.lists {
+  margin: 1rem 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+.lists {
+  background-color: #ffffff;
+  font-size: calc(40% + 0.8vw);
+  font-weight: 500;
+  color: rgb(7, 7, 19);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 0.5em 0px;
+}
+.image-tag {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.name-tag > p {
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  .lists {
+    justify-content: space-evenly;
+    font-size: calc(10% + 1vw);
+  }
+  .name-tag > p {
+    font-size: calc(50% + 1.5vw);
+  }
 }
