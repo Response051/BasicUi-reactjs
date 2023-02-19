@@ -1,13 +1,17 @@
 import "./App.css";
-// import { Button } from "./Components/button/button.js";
 import { Object } from "./Components/Main/Object";
-import { Header } from "./Components/Header/header";
+import Authenticate from "./Components/ContexApis/authenticate";
+import Login from "./Components/ContexApis/login";
+import React, { useState } from "react";
 
 function App() {
+  const [showProfile, setShowProfile] = useState(false);
+  const [username, setUsername] = useState("");
   return (
     <div className="App">
-      <Header />
-      <Object />
+      <Authenticate.Provider value={{ username, setUsername, setShowProfile }}>
+        {showProfile ? <Object /> : <Login />}
+      </Authenticate.Provider>
     </div>
   );
 }

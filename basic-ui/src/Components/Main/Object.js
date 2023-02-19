@@ -1,6 +1,9 @@
 import React from "react";
 import mypicture from "../images/mypicture.jpeg";
+import { Header } from "../Header/header";
+
 export function Object() {
+    
   const students = [
     {
       firstName: "ibeawuchi ",
@@ -221,6 +224,7 @@ export function Object() {
   ));
   return (
     <div>
+    <Header />
       <ul>{mappD}</ul>
     </div>
   );
