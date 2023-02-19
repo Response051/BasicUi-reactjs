@@ -9,7 +9,6 @@ body {
 }
 /* header-section starts */
 .Header-div {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,6 +54,39 @@ body {
   color: black;
   font-weight: bold;
 }
+.contex-API,
+.contex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contex-API {
+  margin-top: 10rem;
+}
+.contex {
+  margin-top: 1rem;
+}
+.contex-API > span {
+  margin: 1rem 0px;
+}
+.contex-API > span > .input {
+  color: #200000;
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 @media screen and (max-width: 600px) {
   .lists {
     justify-content: space-evenly;
