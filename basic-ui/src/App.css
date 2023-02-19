@@ -89,8 +89,8 @@ button {
 
 @media screen and (max-width: 600px) {
   .lists {
-    justify-content: space-evenly;
-    font-size: calc(10% + 1vw);
+    /* justify-content: space-evenly; */
+    font-size: calc(25% + 1vw);
   }
   .name-tag > p {
     font-size: calc(50% + 1.5vw);
